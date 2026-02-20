@@ -1,0 +1,51 @@
+body {
+  background-color: #f4f6f9;
+}
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: #1e293b;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar a {
+  color: white;
+  display: block;
+  margin: 15px 0;
+  text-decoration: none;
+}
+
+.main {
+  flex: 1;
+  background: #f4f6f9;
+}
+
+.topbar {
+  background: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+}
+
+.content {
+  padding: 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  flex: 1;
+  text-align: center;
+}

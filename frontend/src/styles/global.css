@@ -1,0 +1,250 @@
+/* =====================================================
+   EMS — ENTERPRISE GLOBAL UI (SAFE & PROFESSIONAL)
+   ===================================================== */
+
+:root {
+  --bg-main: #f4f6f9;
+  --bg-card: #ffffff;
+  --bg-soft: #f8fafc;
+
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+
+  --border-soft: #e5e7eb;
+  --radius: 14px;
+}
+
+/* ---------- BASE ---------- */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #f8fafc, #eef2f7);
+  color: var(--text-main);
+}
+
+/* ---------- PAGE LAYOUT ---------- */
+.page,
+.content,
+.main {
+  padding: 32px 36px;
+}
+
+/* ---------- HEADINGS ---------- */
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ---------- CARDS ---------- */
+.card,
+.dashboard-card,
+.section,
+.report-box {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 24px;
+  border: 1px solid var(--border-soft);
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.06),
+    0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+/* ---------- BUTTONS ---------- */
+button {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(37, 99, 235, 0.35);
+}
+
+/* ---------- TABLES ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+th {
+  text-align: left;
+  background: var(--bg-soft);
+  padding: 14px;
+  font-weight: 600;
+  color: var(--text-main);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+td {
+  padding: 14px;
+  border-bottom: 1px solid var(--border-soft);
+  color: #334155;
+}
+
+tr:hover td {
+  background: #f9fafb;
+}
+
+/* ---------- STATUS TEXT ---------- */
+.status-good {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.status-warn {
+  color: #ca8a04;
+  font-weight: 600;
+}
+
+/* ---------- SIDEBAR (SAFE DEFAULT) ---------- */
+.sidebar {
+  background: linear-gradient(180deg, #0f172a, #020617);
+  color: #e5e7eb;
+}
+
+.sidebar a {
+  color: #cbd5f5;
+  text-decoration: none;
+  display: block;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+
+.sidebar a:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ---------- MICRO POLISH ---------- */
+* {
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+/* ===== MODULE PAGE CONTAINER ===== */
+.module-page {
+  background: #ffffff;
+  padding: 28px 32px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  margin: 20px;
+}
+
+/* Page titles */
+.module-page h1,
+.module-page h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #1f2937;
+}
+
+/* Page subtitle */
+.module-subtitle {
+  font-size: 15px;
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+/* ===============================
+   MODULE PAGE LAYOUT
+================================ */
+.module-page {
+  min-height: 100vh;
+  padding: 40px 60px;
+  background: #f4f6fb;
+}
+
+/* ===============================
+   FORM CARD (ADD / EDIT EMPLOYEE)
+================================ */
+.form-card {
+  max-width: 520px;
+  background: #ffffff;
+  padding: 32px 36px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.form-card h2 {
+  margin-bottom: 24px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* ===============================
+   FORM SPACING
+================================ */
+.employee-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.employee-form label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+.employee-form input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.employee-form input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* ===============================
+   BUTTON
+================================ */
+.employee-form button {
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.employee-form button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 18px rgba(37, 99, 235, 0.35);
+}
