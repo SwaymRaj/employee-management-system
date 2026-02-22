@@ -1,12 +1,6 @@
 const mysql = require("mysql");
 
-const db = mysql.createConnection({
-  host: process.env.DB_HOST || "localhost",
-  user: process.env.DB_USER || "root",
-  password: process.env.DB_PASSWORD || "nickhaldenmusicbox",
-  database: process.env.DB_NAME || "ems_db",
-  port: process.env.DB_PORT || 3306
-});
+const db = mysql.createConnection(process.env.MYSQL_URL);
 
 db.connect(err => {
   if (err) {
